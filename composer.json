@@ -14,9 +14,12 @@
   "minimum-stability": "stable",
   "description": "Registers environment variables from a .env file",
   "autoload": {
-    "Mim\\Component\\Dotenv": "src",
-    "exclude-from-classmap": [
-      "/tests/"
-    ]
+    "psr-4": {
+      "Mim\\Component\\Dotenv\\": "src",
+      "Mim\\Component\\Dotenv\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.5"
   }
 }
