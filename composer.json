@@ -1,0 +1,22 @@
+{
+  "name": "mim/dotenv",
+  "type": "library",
+  "require": {
+    "php": ">= 7.2.5"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Théo Sikli",
+      "email": "theo@theo-sikli.fr"
+    }
+  ],
+  "minimum-stability": "stable",
+  "description": "Registers environment variables from a .env file",
+  "autoload": {
+    "Mim\\Component\\Dotenv": "src",
+    "exclude-from-classmap": [
+      "/tests/"
+    ]
+  }
+}
